@@ -13,8 +13,8 @@ app.get("/blog", function(req, res){
     res.send("Seja bem-vindo ao meu Blog!")
 })
 
-app.get('/ola/:nome/:cargo', function(req, res){
-    res.send(req.params)
+app.get('/ola/:nome/:idade', function(req, res){
+    res.send("Voce se chama: " + req.params.nome + ", sua idade é " + req.params.idade + "!")
 })
 
 app.listen(8081, function(){
